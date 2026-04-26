@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luna Messaging Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #111;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      background: #fafafa;
+    }
+    label {
+      display: block;
+      margin-top: 14px;
+      font-weight: 600;
+    }
+    input[type="text"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .checkbox-row input {
+      margin-top: 4px;
+    }
+    .small {
+      font-size: 14px;
+      color: #333;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 16px;
+      border-radius: 6px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .note {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>Luna Messaging Signup</h1>
+  <p>
+    Request access to Luna Messaging. Luna Messaging provides two-way utility messages,
+    reminder messages, and assistant responses for approved users.
+  </p>
+
+  <div class="card">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" />
+
+    <label for="phone">Mobile Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your mobile number" />
+
+    <div class="checkbox-row">
+      <input type="checkbox" id="consent" name="consent" />
+      <label for="consent" class="small" style="font-weight: normal; margin-top: 0;">
+        By checking this box, I agree to receive utility, reminder, and assistant text
+        messages from Luna Messaging at the mobile number I provided. Message frequency
+        varies based on my interaction and requested reminders. Message and data rates
+        may apply. Reply HELP for help or STOP to opt out.
+        I have read and agree to the
+        <a href="https://bretthoffman.github.io/luna/terms.html">Terms &amp; Conditions</a>
+        and
+        <a href="https://bretthoffman.github.io/luna/privacy.html">Privacy Policy</a>.
+      </label>
+    </div>
+
+    <p class="note">
+      After submission, requests are manually reviewed before messaging is enabled.
+    </p>
+
+    <a class="button" href="#">Submit Request</a>
+  </div>
+</body>
+</html>
