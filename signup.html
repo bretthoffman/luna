@@ -70,8 +70,9 @@
       font-size: 14px;
       color: #444;
     }
-    .required {
-      color: #b00020;
+    .optional {
+      color: #0b57d0;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -83,29 +84,30 @@
   </p>
 
   <div class="card">
-    <form action="signup-success.html" method="get">
+    <form action="/luna/signup-success.html" method="get">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" placeholder="Your name" required />
 
-      <label for="phone">Mobile Phone Number <span class="required">*</span></label>
+      <label for="phone">Mobile Phone Number</label>
       <input type="tel" id="phone" name="phone" placeholder="Your mobile number" required />
 
       <div class="checkbox-row">
-        <input type="checkbox" id="consent" name="consent" required />
+        <input type="checkbox" id="consent" name="consent" value="yes" />
         <label for="consent" class="checkbox-text">
-          <strong>Required consent:</strong> By checking this box, I agree to receive utility,
+          <span class="optional">Optional SMS consent:</span> By checking this box, I agree to receive utility,
           reminder, and assistant text messages from Luna Messaging at the mobile number I provided.
           Message frequency varies based on my interaction and requested reminders.
           Message and data rates may apply. Reply HELP for help or STOP to opt out.
-          I have read and agree to the
+          I have read the
           <a href="https://bretthoffman.github.io/luna/terms.html" target="_blank">Terms &amp; Conditions</a>
           and
           <a href="https://bretthoffman.github.io/luna/privacy.html" target="_blank">Privacy Policy</a>.
+          Consent to receive SMS messages is not required to submit this form.
         </label>
       </div>
 
       <p class="note">
-        The checkbox above is required before submitting this form.
+        You may submit this form with or without checking the SMS consent box.
         After submission, requests are manually reviewed before messaging is enabled.
       </p>
 
