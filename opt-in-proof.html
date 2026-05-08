@@ -32,31 +32,33 @@
   <h1>Luna Messaging Opt-In Process</h1>
 
   <p>
-    Luna Messaging uses a public web signup flow for opt-in. Users request access by submitting
-    their mobile number through the signup page and checking a required consent box before any
-    messaging is enabled.
+    Luna Messaging uses a public web signup flow for SMS opt-in. Users may submit the signup form
+    with or without SMS consent. Only users who optionally check the SMS consent box are opted in
+    to receive Luna Messaging text messages.
   </p>
 
   <h2>How users opt in</h2>
   <ol>
     <li>The user visits <a href="https://bretthoffman.github.io/luna/signup.html">the Luna Messaging signup page</a>.</li>
     <li>The user enters their mobile phone number into the signup form.</li>
-    <li>The user must check a required consent checkbox before the form can be submitted.</li>
+    <li>The user may optionally check an unchecked SMS consent checkbox to agree to receive utility, reminder, and assistant text messages from Luna Messaging.</li>
+    <li>The SMS consent checkbox is not required to submit the signup form.</li>
     <li>The signup page includes links to the <a href="https://bretthoffman.github.io/luna/privacy.html">Privacy Policy</a> and <a href="https://bretthoffman.github.io/luna/terms.html">Terms &amp; Conditions</a>.</li>
     <li>The signup page states that message frequency varies and message and data rates may apply.</li>
     <li>The submit button is functional and sends the user to a confirmation page after submission: <a href="https://bretthoffman.github.io/luna/signup-success.html">signup-success.html</a>.</li>
-    <li>After submission, the number is manually reviewed and added to an approved allowlist before messaging is enabled.</li>
-    <li>Luna sends messages only to approved users in response to the user’s inbound message or for reminder and utility messages specifically requested by the user.</li>
-    <li>Users can reply HELP for help or STOP to opt out.</li>
+    <li>Only users who check the optional SMS consent box are opted in to receive Luna Messaging text messages.</li>
+    <li>After submission, requests are manually reviewed before messaging is enabled.</li>
+    <li>Users can reply HELP for help or STOP to opt out after enrollment.</li>
   </ol>
 
   <div class="box">
     <h2>Consent checkbox language</h2>
     <p>
-      By checking this box, I agree to receive utility, reminder, and assistant text messages from
-      Luna Messaging at the mobile number I provided. Message frequency varies based on my interaction
-      and requested reminders. Message and data rates may apply. Reply HELP for help or STOP to opt out.
-      I have read and agree to the Terms &amp; Conditions and Privacy Policy.
+      Optional SMS consent: By checking this box, I agree to receive utility, reminder, and assistant
+      text messages from Luna Messaging at the mobile number I provided. Message frequency varies based
+      on my interaction and requested reminders. Message and data rates may apply. Reply HELP for help
+      or STOP to opt out. I have read the Terms &amp; Conditions and Privacy Policy. Consent to receive
+      SMS messages is not required to submit this form.
     </p>
   </div>
 
@@ -77,7 +79,7 @@
   </ul>
 
   <p>
-    Screenshot evidence of the signup flow and confirmation page should be displayed on this page if available.
+    Screenshot evidence of the signup flow and confirmation page should also be displayed on this page if available.
   </p>
 </body>
 </html>
